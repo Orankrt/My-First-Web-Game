@@ -6,3 +6,32 @@
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
 }
+body{
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #193115;
+}
+
+/* Styling the container */
+
+.container {
+    display: flex;
+    width: 80%;
+    padding: 60px 40px;
+    background: #ffffffa9;
+    border-radius: 10px;
+    align-items: flex-end;
+}
+
+/* Styling the header */
+
+.header title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 30em;
+}
