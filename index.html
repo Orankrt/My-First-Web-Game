@@ -3,11 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Game</title>
+    <title>My First Web Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="game-model">
+        <div class="content">
+            <img src="" alt="gif">
+            <h4>Game Over! You Lost</h4>
+            <p>The correct word was: <b>rainbow</b></p>
+            <button class="play again">Play Again</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Hangman Game</h1>
+        <div class="controls">
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="tr">Turkish</option>
+                <option value="nl">Dutch</option>
+            </select>
+            <button id="start-button">Start Game</button>
+        </div>
+        <div class="word-display"></div>
+        <div class="guess-display"></div>
+        <div class="score-display"></div>
+        <div class="gallows"></div>
+        <div class="keyboard"></div>
+    </div>
     <script src="script.js"></script>
-</body>
+    <script src="word-lists/word-list-en.js"></script>
+    <script src="word-lists/word-list-tr.js"></script>
+    <script src="word-lists/word-list-nl.js"></script>
 </html>
