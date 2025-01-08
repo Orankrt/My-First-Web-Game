@@ -7,30 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="game-model">
-        <div class="content">
-            <img src="" alt="gif">
-            <h4>Game Over! You Lost</h4>
-            <p>The correct word was: <b>rainbow</b></p>
-            <button class="play again">Play Again</button>
-        </div>
-    </div>
     <div class="container">
-        <h1>Hangman Game</h1>
-        <div class="controls">
-            <select id="language-select">
-                <option value="en">English</option>
-                <option value="tr">Turkish</option>
-                <option value="nl">Dutch</option>
-            </select>
-            <button id="start-button">Start Game</button>
-        </div>
-        <div class="word-display"></div>
-        <div class="guess-display"></div>
-        <div class="score-display"></div>
-        <div class="gallows"></div>
-        <div class="keyboard"></div>
-        <div></div>
+    
+        <h1 class="title">Main Menu</h1>
+        <button>Play</button>
+        <button>Settings</button>
+        <button>About</button>
+        <p>How to play? <br> A secret word is displayed with blanks for each letter.
+            Guess a letter. If it's correct, it fills in the blank; if wrong, a part of the hangman is drawn.
+            Each wrong guess adds to the hangman <figure class="br"></figure><b>Win or Lose:</b><br>
+            Win: Guess the word before the hangman is fully drawn.
+            Lose: The hangman is completed before the word is guessed. </p>
+            <footer class="social-media">
+                    <a href="#"><img src="#" alt="GitHub"></a>
+                    <a href="#"><img src="#" alt="Gmail"></a>
+                    <a href="#"><img src="#" alt="Instagram"></a>
+            
+            </footer>
+            <div>
+
+
+
+                
+            </div>
+
+
     </div>
     <script src="script.js"></script>
     <script src="word-lists/word-list-en.js"></script>
