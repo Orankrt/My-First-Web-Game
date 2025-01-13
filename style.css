@@ -35,3 +35,9 @@ body{
     font-weight: 600;
     font-size: 30em;
 }
+.btn-language{
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
