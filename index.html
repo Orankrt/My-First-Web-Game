@@ -4,21 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess or Parish!</title>
-    <link rel="stylesheet" href="../Css/menu.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div class="container">
+    <div class="main-menu" id="main-menu">
       <!--------------- main section ------------>
 
       <div class="main">
         <h1>Guess or Parish!</h1>
-        <button class="main-btn">Play</button>
-        <button class="main-btn">Settings</button>
-        <button class="main-btn">About</button>
+        <button class="main-btn" id="play">Play</button>
+        <button class="main-btn" id="settings">Settings</button>
+        <button class="main-btn" id="about">About</button>
       </div>
 
       <!---------------------------------------------------------------------------------------->
@@ -55,7 +55,6 @@
 
       <!--------------- social media section ------------>
       <div class="social-media">
-        
         <a href="#" target="_blank"><i class="bx bxl-github"></i></a>
         <a href="#" target="_blank"><i class="bx bxl-gmail"></i></a>
         <a href="#" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
@@ -66,5 +65,77 @@
         <p>&copy; 2025 Guess or Parish! All rights reserved.</p>
       </footer>
     </div>
+
+    <!------------------------Game screen section ----------------------------->
+    <div class="game-screen hidden" id="game-screen">
+      <button class="return-btn" id="returnMain">Menu</button>
+      <div class="game-modal">
+        <div class="content">
+          <img src="#" alt="gif" />
+          <h4>Game Over!</h4>
+          <p>The correct word was: <b>rainbow</b></p>
+          <button class="play-again">Play Again</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="hangman-box">
+          <img src="images/hangman-0.svg" draggable="false" alt="hangman-img" />
+          <h1>Hangman Game</h1>
+        </div>
+        <div class="game-box">
+          <ul class="word-display"></ul>
+          <h4 class="hint-text">Hint: <b></b></h4>
+          <h4 class="guesses-text">Incorrect guesses: <b></b></h4>
+          <div class="keyboard"></div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------Settings screen section ----------------------------->
+
+    <div class="hidden" id="settings-screen">
+      <div class="settings-modal">
+        <div class="content">
+          <h4>Settings</h4>
+          <div class="settings-box">
+            <h5>Difficulty</h5>
+            <select name="difficulty" id="difficulty">
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+          </div>
+          <div class="settings-box">
+            <h5>Category</h5>
+            <select name="category" id="category">
+              <option value="animals">Animals</option>
+              <option value="countries">Countries</option>
+              <option value="fruits">Fruits</option>
+            </select>
+          </div>
+          <button class="save">Save</button>
+        </div>
+      </div>
+    </div>
+
+<!---------------------------- About section ---------------------------------->
+
+      <div class="about-screen hidden">
+        <div class="content">
+          <h4>About</h4>
+          <p>
+            This is a simple hangman game created with HTML, CSS, and JavaScript.
+            <br />
+            <br />
+            <b>Version:</b> 1.0.0
+            <br />
+            <b>Author:</b> Orhan Emre Kurt
+            <br />
+            <b>Release Date:</b> 10/02/2025
+          </p>
+        </div>
+
+    <script src="word-list.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

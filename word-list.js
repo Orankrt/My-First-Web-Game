@@ -1,4 +1,4 @@
-const wordListEn = [
+const wordList = [
   {
     word: "guitar",
     hint: "A musical instrument with strings.",
