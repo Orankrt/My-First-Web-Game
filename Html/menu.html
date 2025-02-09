@@ -1,51 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Web Game</title>
-    <link rel="stylesheet" href="../CSS/menu.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-    <div class="main-page-container">
-        <header>
-            <h1 class="title"><span class="guess">Guess</span> or <span class="parish">Parish!</span></h1>
-            <button class="main-btn">Play</button>
-            <button class="main-btn">Settings</button>
-            <button class="main-btn">About</button>
-        </header>
-        <aside>
-            <div class="select-language">
-                <h2>Select Language</h2>
-                <button class="btn-language"><img class="img-language" src="../images/United Kingdom Flag.jpg" alt="English"></button>
-                <button class="btn-language"><img class="img-language" src="../images/Turkey Flag.jpg" alt="Turkish"></button>
-                <button class="btn-language"><img class="img-language" src="../images/The Netherlands Flag.jpg" alt="Dutch"></button>
-            </div>
-            <div class="rules">
-                <h2 class="game-rules">Game Rules</h2>
-                <p class="how-to-play"><b>How to play?</b> <br> A secret word is displayed with blanks for each letter.
-                Guess a letter. If it's correct, it fills in the blank; if wrong, a part of the hangman is drawn.
-                Each wrong guess adds to the hangman. <br><br> <b>Win or Lose:</b><br>
-                Win: Guess the word before the hangman is fully drawn.
-                Lose: The hangman is completed before the word is guessed. </p>
-            </div>        
-        </aside>
-        <footer class="social-media">
-            <i class='bx bxl-github'></i>
-            <a href="#">GitHub</a>
-            <i class='bx bxl-gmail' ></i>
-            <a href="#">Gmail</a>
-            <i class='bx bxl-instagram-alt' ></i>
-            <a href="#">Instagram</a>
-        </footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess or Parish!</title>
+    <link rel="stylesheet" href="../Css/menu.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!--------------- main section ------------>
+
+      <div class="main">
+        <h1>Guess or Parish!</h1>
+        <button class="main-btn">Play</button>
+        <button class="main-btn">Settings</button>
+        <button class="main-btn">About</button>
+      </div>
+
+      <!---------------------------------------------------------------------------------------->
+
+      <div class="side">
+        <!--------------- language section ------------>
+
+        <div class="language">
+          <h2>Select Language</h2>
+          <button id="en" class="language-btn"></button>
+          <button id="tr" class="language-btn"></button>
+          <button id="nl" class="language-btn"></button>
+        </div>
+
+        <!--------------- rules section ------------>
+
+        <div class="rules">
+          <h2>How To Play?</h2>
+          <p>
+            A secret word is displayed with blanks for each letter. Guess a
+            letter. If it's correct, it fills in the blank; if wrong, a part of
+            the hangman is drawn. Each wrong guess adds to the hangman.
+          </p>
+          <h2>Win or Lose</h2>
+          <p>
+            <b>Win:</b> Guess the word before the hangman is fully drawn.
+            <br /><b>Lose:</b> The hangman is completed before the word is
+            guessed.
+          </p>
+        </div>
+
+        <!---------------------------------------------------------------------------------------->
+      </div>
+
+      <!--------------- social media section ------------>
+      <div class="social-media">
+        
+        <a href="#" target="_blank"><i class="bx bxl-github"></i></a>
+        <a href="#" target="_blank"><i class="bx bxl-gmail"></i></a>
+        <a href="#" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+      </div>
+
+      <!--------------- footer section ------------>
+      <footer>
+        <p>&copy; 2025 Guess or Parish! All rights reserved.</p>
+      </footer>
     </div>
-    <script src="../JS/menu.js"></script>
-    <script src="../JS/word-lists/word-list-en.js"></script>
-    <script src="../JS/word-lists/word-list-nl.js"></script>
-    <script src="../JS/word-lists/word-list-tr.js"></script>
-    </body>
-    </html>
-
-
-    
+  </body>
+</html>
