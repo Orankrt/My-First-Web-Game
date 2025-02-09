@@ -109,19 +109,19 @@ body {
 }
 
 .language #en {
-  background-image: url(../images/United\ Kingdom\ Flag.jpg);
+  background-image: url(../images/United\ Kingdom\ Flag.png);
   background-size: cover;
   background-position: center;
 }
 
 .language #tr {
-  background-image: url(../images/Turkey\ Flag.jpg);
+  background-image: url(../images/Turkey\ Flag.png);
   background-size: cover;
   background-position: left;
 }
 
 .language #nl {
-  background-image: url(../images/The\ Netherlands\ Flag.jpg);
+  background-image: url(../images/The\ Netherlands\ Flag.png);
   background-size: cover;
   background-position: center;
 }
